@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>registerDialog</class>
+ <widget class="QDialog" name="registerDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>623</width>
+    <height>512</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Enregistrement</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+background: rgb(168, 0, 0);
+}</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>460</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 20px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Enregistrement</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nameLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 18px;
+}</string>
+   </property>
+   <property name="text">
+    <string> Nom:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="nameLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>100</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 16;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="prenumeLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>140</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 18px;
+}</string>
+   </property>
+   <property name="text">
+    <string> Prénom:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="prenumeLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>140</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 16;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="CNPLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>180</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 18px;
+}</string>
+   </property>
+   <property name="text">
+    <string> CNP:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="CNPLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>180</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 16;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="serieBuletinLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>220</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Calibri,sans-serif'; font-size:11pt;&quot;&gt;Le numéro de la carte d’identité nationale:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 18px;
+}</string>
+   </property>
+   <property name="text">
+    <string> Le numéro de la...</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="genLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>260</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 18px;
+}</string>
+   </property>
+   <property name="text">
+    <string> Genre:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="adresaLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>300</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 18px;
+}</string>
+   </property>
+   <property name="text">
+    <string> Adresse:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="dataNasteriiLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>340</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 18px;
+}</string>
+   </property>
+   <property name="text">
+    <string> Date de naissance:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="loculNasteriiLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>380</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 18px;
+}</string>
+   </property>
+   <property name="text">
+    <string> Lieu de naissance:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="passwordLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>60</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 16;
+}</string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="emailLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>20</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 16;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="emailLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 18px;
+}</string>
+   </property>
+   <property name="text">
+    <string> Adresse de mail:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="passwordLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 18px;
+}</string>
+   </property>
+   <property name="text">
+    <string> Mot de passe:</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dataNasteriiEdit">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>340</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDateEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 16px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="loculNasteriiLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>379</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 16px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="adresaLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>299</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 16px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="genComboBox">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>259</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 16px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="linieLabel">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>220</y>
+     <width>21</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>   -</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="serieBuletinJudLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>219</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 16px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="serieBuletinCodLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>220</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 16px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="PINLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>420</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 18px;
+}</string>
+   </property>
+   <property name="text">
+    <string> PIN:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="PINLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>420</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>PIN-ul este format din 4 cifre</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 16px;
+}</string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>emailLineEdit</tabstop>
+  <tabstop>passwordLineEdit</tabstop>
+  <tabstop>nameLineEdit</tabstop>
+  <tabstop>prenumeLineEdit</tabstop>
+  <tabstop>CNPLineEdit</tabstop>
+  <tabstop>serieBuletinJudLineEdit</tabstop>
+  <tabstop>serieBuletinCodLineEdit</tabstop>
+  <tabstop>genComboBox</tabstop>
+  <tabstop>adresaLineEdit</tabstop>
+  <tabstop>dataNasteriiEdit</tabstop>
+  <tabstop>loculNasteriiLineEdit</tabstop>
+  <tabstop>PINLineEdit</tabstop>
+  <tabstop>pushButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

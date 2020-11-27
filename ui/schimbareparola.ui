@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>schimbareParola</class>
+ <widget class="QDialog" name="schimbareParola">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>621</width>
+    <height>491</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Changer le mot de passe</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+background: rgb(168, 0, 0);
+}</string>
+  </property>
+  <widget class="QPushButton" name="confirmaButton">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>250</y>
+     <width>241</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 28px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Confirmer</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="confirmPasswordLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>180</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 16px;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="newPasswordLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>110</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 16px;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="oldPasswordLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>40</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 16px;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="oldPasswordLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>311</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 18px;
+}</string>
+   </property>
+   <property name="text">
+    <string> Ancien mot de passe:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="newPasswordLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>311</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 18px;
+}</string>
+   </property>
+   <property name="text">
+    <string> Nouveau mot de passe:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="passwordConfirmLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>170</y>
+     <width>311</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 18px;
+}</string>
+   </property>
+   <property name="text">
+    <string> Confirme le nouveau mot de passe:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="logo">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>330</y>
+     <width>221</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>oldPasswordLineEdit</tabstop>
+  <tabstop>newPasswordLineEdit</tabstop>
+  <tabstop>confirmPasswordLineEdit</tabstop>
+  <tabstop>confirmaButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

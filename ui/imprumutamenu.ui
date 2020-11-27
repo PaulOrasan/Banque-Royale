@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>imprumutaMenu</class>
+ <widget class="QDialog" name="imprumutaMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>623</width>
+    <height>487</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Emprunter</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+background: rgb(168, 0, 0);
+}</string>
+  </property>
+  <widget class="QPushButton" name="confirmButton">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>230</y>
+     <width>161</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 24px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Confirmer</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="euro">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>80</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 15px;
+}</string>
+   </property>
+   <property name="text">
+    <string> euro</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="euro_2">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>400</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 15px;
+}</string>
+   </property>
+   <property name="text">
+    <string> euro</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="imprumutaSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>380</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 16px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="remainingLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>60</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+color: black;
+font-size: 16px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="remainingLabel">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>40</y>
+     <width>251</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 18px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Vous pouvez emprunter plus:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="imprumutaLabel">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>360</y>
+     <width>251</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 18px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Emprunter:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="logo">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>130</y>
+     <width>221</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="PINLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>150</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+color: black;
+font-size: 16px;
+}</string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>140</y>
+     <width>81</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 18px;
+}</string>
+   </property>
+   <property name="text">
+    <string>  PIN:</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>remainingLineEdit</tabstop>
+  <tabstop>PINLineEdit</tabstop>
+  <tabstop>imprumutaSpinBox</tabstop>
+  <tabstop>confirmButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

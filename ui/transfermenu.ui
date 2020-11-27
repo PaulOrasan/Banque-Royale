@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>transferMenu</class>
+ <widget class="QDialog" name="transferMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>623</width>
+    <height>487</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Transferts</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+background: rgb(168, 0, 0);
+}</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>430</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 28px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Confirmer</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="valoareLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>314</y>
+     <width>271</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 17px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Valeur:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="euro">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>330</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+}</string>
+   </property>
+   <property name="text">
+    <string> euro</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="valoareSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>320</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="codBancarLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>254</y>
+     <width>271</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 17px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Code bancaire du destinataire:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>260</y>
+     <width>21</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>   -</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="codPrimaLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>260</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="codaDouaLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>260</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_3">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>260</y>
+     <width>21</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>   -</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="codaPatraLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>260</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="codaTreiaLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>260</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line_4">
+   <property name="geometry">
+    <rect>
+     <x>521</x>
+     <y>260</y>
+     <width>21</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>  -</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="seriaBuletinLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>194</y>
+     <width>271</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Calibri,sans-serif'; font-size:11pt;&quot;&gt;Le numéro de la carte d’identité du destinataire:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 17px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Numéro de la carte d’identité...</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="serieBuletinJudLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>200</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="line">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>200</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>      -</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="serieBuletinCodLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>200</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="CNPLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>134</y>
+     <width>271</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 17px;
+}</string>
+   </property>
+   <property name="text">
+    <string>CNP du destinataire:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="CNPLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>140</y>
+     <width>301</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="prenumeLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>74</y>
+     <width>271</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 17px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Le prenom du destinataire:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="prenumeLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>80</y>
+     <width>301</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="numeLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>30</y>
+     <width>301</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="numeLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>271</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 17px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Le nom du destinataire:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="PINLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>370</y>
+     <width>271</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+font-size: 17px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Votre PIN:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="PINLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>380</y>
+     <width>301</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(85, 0, 0);
+border-radius:7px;
+background: #D8B75A;
+}</string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>numeLineEdit</tabstop>
+  <tabstop>prenumeLineEdit</tabstop>
+  <tabstop>CNPLineEdit</tabstop>
+  <tabstop>serieBuletinJudLineEdit</tabstop>
+  <tabstop>serieBuletinCodLineEdit</tabstop>
+  <tabstop>codPrimaLineEdit</tabstop>
+  <tabstop>codaDouaLineEdit</tabstop>
+  <tabstop>codaTreiaLineEdit</tabstop>
+  <tabstop>codaPatraLineEdit</tabstop>
+  <tabstop>valoareSpinBox</tabstop>
+  <tabstop>PINLineEdit</tabstop>
+  <tabstop>pushButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
